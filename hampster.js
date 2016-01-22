@@ -16,7 +16,7 @@ var Biscuit = new Hamp('biscuit','biscuit mix', 7, 'biscuit!','http://images1.fa
 
 
 // hampArray
-var hampArray = [Chunky, Emy];
+var hampArray = [Chunky, Emy, Biscuit ];
 
 //Output to HTML
 for (i=0;i < hampArray.length; i++) {

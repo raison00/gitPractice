@@ -1,5 +1,5 @@
-// Cat model
-function Cat (name, breed, age, sound, imgUrl) {
+// Reptile model
+function Reptile (name, breed, age, sound, imgUrl) {
 	this.name = name;
 	this.breed = breed;
 	this.age = age;
@@ -7,26 +7,26 @@ function Cat (name, breed, age, sound, imgUrl) {
 	this.imgUrl = imgUrl; 
 }
 
-// Cat Instances
-var mrGrumpy = new Cat('Mr.Grumpy', 'persian long hair', 4, '"purrrrr--purrr-persian!"', 'http://www.petwave.com/~/media/Images/Center/Breed/Cats/Semi-Long-and-Long-Hair/Persian/Persian-Cat-Sitting.ashx');
-var kalie = new Cat('Tiger', 'calico', 0,'"mew mew"','https://s-media-cache-ak0.pinimg.com/236x/08/67/99/0867998a8e927bb50133bb5d2cd25f83.jpg');
-var blackie = new Cat('Blackie','tabby',0, '"meeew"', 'http://placekitten.com/150/170');
-var milo = new Cat('Milo','orange tabby',0, '"an appropriate cat sound"', 'http://oddstuffmagazine.com/wp-content/uploads/2011/09/Small-Cat-580x574.png');
+// Reptile Instances
+var turtle1 = new Reptile('Mr.Grumpy', 'persian long hair', 4, '"purrrrr--purrr-persian!"', 'http://www.what-do-turtles-eat.com/wp-content/uploads/2014/10/Sea-Turtles-Habitat.jpg');
+var turtle2 = new Reptile('Tiger', 'calico', 0,'"mew mew"','http://www.capitalotc.com/wp-content/uploads/2015/09/o-SEA-TURTLE-facebook.jpg');
+var turtle3 = new Reptile('Blackie','tabby',0, '"meeew"', 'http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Reptiles/A-G/green-sea-turtle-swimming.jpg');
+var turtle4 = new Reptile('Milo','orange tabby',0, '"an appropriate Reptile sound"', 'http://assets.worldwildlife.org/photos/1257/images/hero_full/SeaTurtle-1600x600px.jpg');
 
 
-// Cat Array
-var catArray = [mrGrumpy,kalie,blackie,milo];
+// Reptile Array
+var reptileArray = [turtle1,turtle2,turtle3,turtle4];
 
 //Output to HTML
-for (i=0;i < catArray.length; i++) {
-		name = catArray[i].name,
-		img = catArray[i].imgUrl,
-		breed = catArray[i].breed,
-		sound = catArray[i].sound;
+for (i=0;i < reptileArray.length; i++) {
+		name = reptileArray[i].name,
+		img = reptileArray[i].imgUrl,
+		breed = reptileArray[i].breed,
+		sound = reptileArray[i].sound;
 		var animalDiv = document.createElement('div');
 		animalDiv.className = 'animalContainer'		
 		animalDiv.innerHTML = '<div class="animalContent"><img class="animalImg" src="'+img+'" /><p class="name">'+name+'</p><p class="breed">'+breed+'</p><p class="sound">'+sound+'</p></div>';
-		var sectionContainer = document.getElementById('cats');
+		var sectionContainer = document.getElementById('turtles');
 		sectionContainer.appendChild(animalDiv);
 }
 
