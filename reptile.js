@@ -13,6 +13,16 @@ var turtle2 = new Reptile('sprout', 'turtleo', 0,'"turtle"','http://www.capitalo
 var turtle3 = new Reptile('squidly','turtle',0, '"turtle"', 'http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Reptiles/A-G/green-sea-turtle-swimming.jpg');
 var turtle4 = new Reptile('turtle','turtle',0, '"an appropriate Reptile sound"', 'http://assets.worldwildlife.org/photos/1257/images/hero_full/SeaTurtle-1600x600px.jpg');
 
+var turtle5 = new Reptile('turtle','turtle',0, '"an appropriate Reptile sound"', 'http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Reptiles/A-G/green-sea-turtle-swimming.jpg');
+
+var turtle6 = new Reptile('turtle','turtle',0, '"an appropriate Reptile sound"', 'http://www.keywestaquarium.com/wp-content/uploads/2015/04/sea-turtle.jpg');
+
+var turtle7 = new Reptile('turtle','turtle',0, '"an appropriate Reptile sound"', 'https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/rf/image_908w/2010-2019/WashingtonPost/2012/02/02/Interactivity/Images/138058628.jpg&w=1484');
+
+
+
+
+
 
 // Reptile Array
 var reptileArray = [turtle1,turtle2,turtle3,turtle4];
