@@ -25,7 +25,7 @@ var turtle7 = new Reptile('turtle','turtle',0, '"an appropriate Reptile sound"',
 
 
 // Reptile Array
-var reptileArray = [turtle1,turtle2,turtle3,turtle4];
+var reptileArray = [turtle1,turtle2,turtle3,turtle4,turtle5,turtle6,turtle7];
 
 //Output to HTML
 for (i=0;i < reptileArray.length; i++) {
