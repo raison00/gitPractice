@@ -1,0 +1,802 @@
+Last login: Wed Jan 20 11:13:57 on ttys000
+a4605082:~ p139f1c$ cd STUFF
+a4605082:STUFF p139f1c$ cd gitPractive
+-bash: cd: gitPractive: No such file or directory
+a4605082:STUFF p139f1c$ cd gitPractice
+a4605082:gitPractice p139f1c$ ls
+README.md	dog.js		index.html	turtles.js
+cat.js		hampster.js	testfile.html
+a4605082:gitPractice p139f1c$ git status
+On branch iss01
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.cat.js.swp
+
+nothing added to commit but untracked files present (use "git add" to track)
+a4605082:gitPractice p139f1c$ git add cat.js
+a4605082:gitPractice p139f1c$ git status
+On branch iss01
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.cat.js.swp
+
+nothing added to commit but untracked files present (use "git add" to track)
+a4605082:gitPractice p139f1c$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+a4605082:gitPractice p139f1c$ git push origin iss01
+Counting objects: 18, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (18/18), 3.46 KiB | 0 bytes/s, done.
+Total 18 (delta 3), reused 0 (delta 0)
+To https://github.com/raison00/gitPractice.git
+ * [new branch]      iss01 -> iss01
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.cat.js.swp
+
+nothing added to commit but untracked files present (use "git add" to track)
+a4605082:gitPractice p139f1c$ git checkout -b iss02
+Switched to a new branch 'iss02'
+a4605082:gitPractice p139f1c$ git status
+On branch iss02
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   dog.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.cat.js.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git add cat.js
+a4605082:gitPractice p139f1c$ git status
+On branch iss02
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   dog.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.cat.js.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git checkout master
+M	dog.js
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+a4605082:gitPractice p139f1c$ git push origin iss02
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/raison00/gitPractice.git
+ * [new branch]      iss02 -> iss02
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   dog.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.cat.js.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git push origin iss02
+Everything up-to-date
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   dog.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.cat.js.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git checkout -b feat01
+M	dog.js
+Switched to a new branch 'feat01'
+a4605082:gitPractice p139f1c$ git status
+On branch feat01
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   dog.js
+	modified:   hampster.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.cat.js.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git checkout master
+M	dog.js
+M	hampster.js
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+a4605082:gitPractice p139f1c$ git push origin feat01
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/raison00/gitPractice.git
+ * [new branch]      feat01 -> feat01
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   dog.js
+	modified:   hampster.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.cat.js.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git checkout -b feat02
+M	dog.js
+M	hampster.js
+Switched to a new branch 'feat02'
+a4605082:gitPractice p139f1c$ git checkout master
+M	dog.js
+M	hampster.js
+M	index.html
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+a4605082:gitPractice p139f1c$ git push origin feat02
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/raison00/gitPractice.git
+ * [new branch]      feat02 -> feat02
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   dog.js
+	modified:   hampster.js
+	modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.cat.js.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git add .
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .cat.js.swp
+	modified:   dog.js
+	modified:   hampster.js
+	modified:   index.html
+
+a4605082:gitPractice p139f1c$ git checkout master
+A	.cat.js.swp
+M	dog.js
+M	hampster.js
+M	index.html
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+a4605082:gitPractice p139f1c$ git push origin feat02
+Everything up-to-date
+a4605082:gitPractice p139f1c$ git merge iss01 iss02
+Already up-to-date.
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .cat.js.swp
+	modified:   dog.js
+	modified:   hampster.js
+	modified:   index.html
+
+a4605082:gitPractice p139f1c$ touch reptile.js
+a4605082:gitPractice p139f1c$ git add reptile.js
+a4605082:gitPractice p139f1c$ git commit -m 'noteworthy reptiles'
+[master 393c570] noteworthy reptiles
+ 5 files changed, 41 insertions(+), 4 deletions(-)
+ create mode 100644 .cat.js.swp
+ create mode 100644 reptile.js
+a4605082:gitPractice p139f1c$ git push origin master
+To https://github.com/raison00/gitPractice.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/raison00/gitPractice.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+a4605082:gitPractice p139f1c$ git remote add origin master
+fatal: remote origin already exists.
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git push
+To https://github.com/raison00/gitPractice.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/raison00/gitPractice.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+a4605082:gitPractice p139f1c$ git checkout origin
+Note: checking out 'origin'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b new_branch_name
+
+HEAD is now at 9de690a... files
+a4605082:gitPractice p139f1c$ git checkout master
+Previous HEAD position was 9de690a... files
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+a4605082:gitPractice p139f1c$ git push index.html
+fatal: Invalid gitfile format: index.html
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git pull
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 2), reused 2 (delta 2), pack-reused 1
+Unpacking objects: 100% (3/3), done.
+From https://github.com/raison00/gitPractice
+   9de690a..babda69  master     -> origin/master
+error: There was a problem with the editor 'vi'.
+Not committing merge; use 'git commit' to complete the merge.
+a4605082:gitPractice p139f1c$ git commit -m 'only rendering desktop'
+[master e1977ea] only rendering desktop
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+a4605082:gitPractice p139f1c$ git push
+
+Counting objects: 8, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 2.76 KiB | 0 bytes/s, done.
+Total 8 (delta 3), reused 0 (delta 0)
+^[To https://github.com/raison00/gitPractice.git
+   babda69..e1977ea  master -> master
+a4605082:gitPractice p139f1c$ 
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git pull feat01
+fatal: 'feat01' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git pull
+Already up-to-date.
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git add 'index.html'
+a4605082:gitPractice p139f1c$ git commit -m 'more animals'
+[master 2fbfcb1] more animals
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+a4605082:gitPractice p139f1c$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 384 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/raison00/gitPractice.git
+   e1977ea..2fbfcb1  master -> master
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   hampster.js
+	modified:   reptile.js
+	modified:   turtles.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git add .
+a4605082:gitPractice p139f1c$ git commit -m 'hands in the dark js files'
+[master 10ef582] hands in the dark js files
+ 3 files changed, 99 insertions(+), 33 deletions(-)
+ rewrite hampster.js (66%)
+a4605082:gitPractice p139f1c$ git remote add origin master
+fatal: remote origin already exists.
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git push
+git statusCounting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 465 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+
+To https://github.com/raison00/gitPractice.git
+   2fbfcb1..10ef582  master -> master
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   hampster.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git add hampster.js
+a4605082:gitPractice p139f1c$ git commit -m 'hampsters'
+[master 195341b] hampsters
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+a4605082:gitPractice p139f1c$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 593 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/raison00/gitPractice.git
+   10ef582..195341b  master -> master
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git checkout -b feat-rebase
+Switched to a new branch 'feat-rebase'
+a4605082:gitPractice p139f1c$ git add index.html
+a4605082:gitPractice p139f1c$ git commit -m 'title change'
+[feat-rebase 9f9476e] title change
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+a4605082:gitPractice p139f1c$ git push
+fatal: The current branch feat-rebase has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feat-rebase
+
+a4605082:gitPractice p139f1c$ git push origin master
+Everything up-to-date
+a4605082:gitPractice p139f1c$ git status
+On branch feat-rebase
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+a4605082:gitPractice p139f1c$ git checkout feat-rebase
+M	cat.js
+Switched to branch 'feat-rebase'
+a4605082:gitPractice p139f1c$ git checkout master
+M	cat.js
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+a4605082:gitPractice p139f1c$ git add cat.js
+a4605082:gitPractice p139f1c$ git commit -m 'fluffy'
+[master f9a2339] fluffy
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+a4605082:gitPractice p139f1c$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 402 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/raison00/gitPractice.git
+   195341b..f9a2339  master -> master
+a4605082:gitPractice p139f1c$ git checkout feat-rebase
+Switched to branch 'feat-rebase'
+a4605082:gitPractice p139f1c$ git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: title change
+a4605082:gitPractice p139f1c$ git log
+commit 94ee7e0a83645640ba66bd8efc38d6be1590731c
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 12:34:47 2016 -0800
+
+    title change
+
+commit f9a2339d8e554200c12135ca30e67e771b7b2554
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 12:39:05 2016 -0800
+
+    fluffy
+
+commit 195341b45ad179c9980998d1929fa32b0164b8e5
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 12:32:59 2016 -0800
+
+a4605082:gitPractice p139f1c$ git status
+On branch feat-rebase
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   reptile.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git add reptile.js
+a4605082:gitPractice p139f1c$ git commit -m 'turtles!'
+[feat-rebase b28557a] turtles!
+ 1 file changed, 33 insertions(+), 33 deletions(-)
+ rewrite reptile.js (60%)
+a4605082:gitPractice p139f1c$ git push
+fatal: The current branch feat-rebase has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feat-rebase
+
+a4605082:gitPractice p139f1c$ git add index.html
+a4605082:gitPractice p139f1c$ git commit -m 'reorg'
+[feat-rebase 4bdc227] reorg
+ 1 file changed, 9 insertions(+), 5 deletions(-)
+a4605082:gitPractice p139f1c$ git push
+fatal: The current branch feat-rebase has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feat-rebase
+
+a4605082:gitPractice p139f1c$ git-status
+-bash: git-status: command not found
+a4605082:gitPractice p139f1c$ git status
+On branch feat-rebase
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+a4605082:gitPractice p139f1c$ git cherry-pick turtles!
+fatal: bad revision 'turtles!'
+a4605082:gitPractice p139f1c$ git cherry-pick 'turtles!'
+fatal: bad revision 'turtles!'
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git log
+commit f9a2339d8e554200c12135ca30e67e771b7b2554
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 12:39:05 2016 -0800
+
+    fluffy
+
+commit 195341b45ad179c9980998d1929fa32b0164b8e5
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 12:32:59 2016 -0800
+
+    hampsters
+
+commit 10ef582a80f69e2698ce2ad0845094d84a4ec242
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 12:25:18 2016 -0800
+
+a4605082:gitPractice p139f1c$ 
+a4605082:gitPractice p139f1c$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+Did you mean this?
+	status
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git rebase master
+Current branch master is up to date.
+a4605082:gitPractice p139f1c$ git log
+commit f9a2339d8e554200c12135ca30e67e771b7b2554
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 12:39:05 2016 -0800
+
+    fluffy
+
+commit 195341b45ad179c9980998d1929fa32b0164b8e5
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 12:32:59 2016 -0800
+
+    hampsters
+
+commit 10ef582a80f69e2698ce2ad0845094d84a4ec242
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 12:25:18 2016 -0800
+
+a4605082:gitPractice p139f1c$ git cherry-pick fluffy
+fatal: bad revision 'fluffy'
+a4605082:gitPractice p139f1c$ git log 
+commit f9a2339d8e554200c12135ca30e67e771b7b2554
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 12:39:05 2016 -0800
+
+    fluffy
+
+commit 195341b45ad179c9980998d1929fa32b0164b8e5
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 12:32:59 2016 -0800
+
+    hampsters
+
+commit 10ef582a80f69e2698ce2ad0845094d84a4ec242
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 12:25:18 2016 -0800
+
+a4605082:gitPractice p139f1c$ 
+a4605082:gitPractice p139f1c$ git push origin master
+Everything up-to-date
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git add index.html
+a4605082:gitPractice p139f1c$ git commit -m 'nothing but the color'
+[master 58c12d0] nothing but the color
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+a4605082:gitPractice p139f1c$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 324 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/raison00/gitPractice.git
+   f9a2339..58c12d0  master -> master
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   hampster.js
+	modified:   index.html
+	modified:   reptile.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git add .
+a4605082:gitPractice p139f1c$ git commit -m 'tidying up'
+[master f4a5cf4] tidying up
+ 3 files changed, 38 insertions(+), 38 deletions(-)
+ rewrite reptile.js (67%)
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git push
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.18 KiB | 0 bytes/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+To https://github.com/raison00/gitPractice.git
+   58c12d0..f4a5cf4  master -> master
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git push origin master
+Everything up-to-date
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git add index.html
+a4605082:gitPractice p139f1c$ git commit -m 'positoning'
+[master b1813c4] positoning
+ 1 file changed, 10 insertions(+), 8 deletions(-)
+a4605082:gitPractice p139f1c$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 324 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/raison00/gitPractice.git
+   f4a5cf4..b1813c4  master -> master
+a4605082:gitPractice p139f1c$ git log
+commit b1813c4c565c41c23adaccbc7bf1b9b5f1f56f40
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 13:14:52 2016 -0800
+
+    positoning
+
+commit f4a5cf42cc3338d8b82a391d82ec408eb70d5fc4
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 13:10:57 2016 -0800
+
+    tidying up
+
+commit 58c12d068dccaf477bdc44138b6b8726c111296b
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 12:56:16 2016 -0800
+
+a4605082:gitPractice p139f1c$ 
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git add .
+a4605082:gitPractice p139f1c$ git commit -m 'animals know how to party'
+[master 8f2152e] animals know how to party
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+a4605082:gitPractice p139f1c$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 364 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/raison00/gitPractice.git
+   b1813c4..8f2152e  master -> master
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git push origin master
+Everything up-to-date
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git checkout master
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git log
+commit 8f2152ed4b23746feee590d357ede48d887ab06e
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 13:19:18 2016 -0800
+
+    animals know how to party
+
+commit b1813c4c565c41c23adaccbc7bf1b9b5f1f56f40
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 13:14:52 2016 -0800
+
+    positoning
+
+commit f4a5cf42cc3338d8b82a391d82ec408eb70d5fc4
+Author: raison00 <felicia.macys@gmail.com>
+Date:   Fri Jan 22 13:10:57 2016 -0800
+
+a4605082:gitPractice p139f1c$ 
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+a4605082:gitPractice p139f1c$ git add index.html
+a4605082:gitPractice p139f1c$ git commit -m "time"
+[master f8e5cef] time
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+a4605082:gitPractice p139f1c$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 315 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/raison00/gitPractice.git
+   8f2152e..f8e5cef  master -> master
+a4605082:gitPractice p139f1c$ git add index.html
+a4605082:gitPractice p139f1c$ git commit -m 'sea change'
+[master 7eb2327] sea change
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+a4605082:gitPractice p139f1c$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 308 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/raison00/gitPractice.git
+   f8e5cef..7eb2327  master -> master
+a4605082:gitPractice p139f1c$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+a4605082:gitPractice p139f1c$ git add index.html
+a4605082:gitPractice p139f1c$ git commit -m 'sea change'
+[master 876e319] sea change
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+a4605082:gitPractice p139f1c$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 323 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/raison00/gitPractice.git
+   7eb2327..876e319  master -> master
+a4605082:gitPractice p139f1c$ 
