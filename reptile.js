@@ -8,10 +8,10 @@ function Reptile (name, breed, age, sound, imgUrl) {
 }
 
 // Reptile Instances
-var turtle1 = new Reptile('Mr.Grumpy', 'persian long hair', 4, '"purrrrr--purrr-persian!"', 'http://www.what-do-turtles-eat.com/wp-content/uploads/2014/10/Sea-Turtles-Habitat.jpg');
-var turtle2 = new Reptile('Tiger', 'calico', 0,'"mew mew"','http://www.capitalotc.com/wp-content/uploads/2015/09/o-SEA-TURTLE-facebook.jpg');
-var turtle3 = new Reptile('Blackie','tabby',0, '"meeew"', 'http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Reptiles/A-G/green-sea-turtle-swimming.jpg');
-var turtle4 = new Reptile('Milo','orange tabby',0, '"an appropriate Reptile sound"', 'http://assets.worldwildlife.org/photos/1257/images/hero_full/SeaTurtle-1600x600px.jpg');
+var turtle1 = new Reptile('crush', 'turtle long hair', 4, '"turtle!"', 'http://www.what-do-turtles-eat.com/wp-content/uploads/2014/10/Sea-Turtles-Habitat.jpg');
+var turtle2 = new Reptile('sprout', 'turtleo', 0,'"turtle"','http://www.capitalotc.com/wp-content/uploads/2015/09/o-SEA-TURTLE-facebook.jpg');
+var turtle3 = new Reptile('squidly','turtle',0, '"turtle"', 'http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Reptiles/A-G/green-sea-turtle-swimming.jpg');
+var turtle4 = new Reptile('turtle','turtle',0, '"an appropriate Reptile sound"', 'http://assets.worldwildlife.org/photos/1257/images/hero_full/SeaTurtle-1600x600px.jpg');
 
 
 // Reptile Array
